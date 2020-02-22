@@ -1,0 +1,90 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_POT RV?
+U 1 1 5E512F49
+P 3100 2300
+F 0 "RV?" V 2893 2300 50  0000 C CNN
+F 1 "R_POT" V 2984 2300 50  0000 C CNN
+F 2 "" H 3100 2300 50  0001 C CNN
+F 3 "~" H 3100 2300 50  0001 C CNN
+	1    3100 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E5134B5
+P 4350 2300
+F 0 "R?" V 4143 2300 50  0000 C CNN
+F 1 "R" V 4234 2300 50  0000 C CNN
+F 2 "" V 4280 2300 50  0001 C CNN
+F 3 "~" H 4350 2300 50  0001 C CNN
+	1    4350 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5E51398A
+P 4950 2300
+F 0 "D?" H 4943 2045 50  0000 C CNN
+F 1 "LED" H 4943 2136 50  0000 C CNN
+F 2 "" H 4950 2300 50  0001 C CNN
+F 3 "~" H 4950 2300 50  0001 C CNN
+	1    4950 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E513FC3
+P 6050 2850
+F 0 "#PWR?" H 6050 2600 50  0001 C CNN
+F 1 "GND" V 6055 2722 50  0000 R CNN
+F 2 "" H 6050 2850 50  0001 C CNN
+F 3 "" H 6050 2850 50  0001 C CNN
+	1    6050 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E514765
+P 1700 2950
+F 0 "#PWR?" H 1700 2800 50  0001 C CNN
+F 1 "+5V" V 1715 3078 50  0000 L CNN
+F 2 "" H 1700 2950 50  0001 C CNN
+F 3 "" H 1700 2950 50  0001 C CNN
+	1    1700 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 2950 1700 2300
+Wire Wire Line
+	1700 2300 2950 2300
+Wire Wire Line
+	3100 2450 3800 2450
+Wire Wire Line
+	3800 2450 3800 2300
+Wire Wire Line
+	3800 2300 4200 2300
+Wire Wire Line
+	4500 2300 4800 2300
+Wire Wire Line
+	5100 2300 6000 2300
+Wire Wire Line
+	6000 2300 6000 2850
+Wire Wire Line
+	6000 2850 6050 2850
+NoConn ~ 3250 2300
+$EndSCHEMATC
